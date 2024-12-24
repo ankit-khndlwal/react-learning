@@ -14,9 +14,10 @@ a{
 
 .Hero{
   background: url(../images/wallpaper3.jpg);
-  height: 920px;
+  height: auto;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup{
@@ -24,6 +25,12 @@ a{
   max-width: 500px;
   padding: 150px 50px;
   text-align: center;
+}
+
+.Hero svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .Hero h1{
@@ -84,3 +91,9 @@ a{
   }
 }
 
+.Logos{
+  grid-template-columns: repeat(7, auto);
+  display: grid;
+  grid-gap: 40px;
+  margin: 100px 0px;
+}
